@@ -2,38 +2,48 @@
 <html>
 <head>
     <style type="text/css">
-        body > table > tbody > tr > td {
-            vertical-align: top;
-        }
+				body {
+						display:flex;
+						flex-direction: row;
+						font-size: 1.5vw;
+						padding: 0;
+						margin: 0;
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						right: 0;
+						left: 0;
+				}
         .diagram {
-            width: 600px;
+						overflow: scroll;
+						flex-grow: 1;
+						flex-shrink: ;
         }
+				.heights {
+						flex-grow: 0;
+						flex-shrink: 0;
+				}
         .heights table {
-            border-spacing: 10px;
+            border-spacing: 1em;
         }
         .heights td.h {
-            border: 2px solid black;
-            padding: 4px 6px 4px 6px;
+            border: 0.1em solid black;
+            padding: 0.4em 0.6em; 
             font-weight: bold;
+						white-space: nowrap;
         }
         .heights td.hh {
-            padding: 4px 6px 4px 6px;
+            padding: 0.4em 0.6em; 
             font-weight: bold;
+						white-space: nowrap;
         }
         .heights td.d {
-            padding-left: 30px;
-        }
-        body {
-            font-size: 14pt;
+            padding-left: 3em;
         }
     </style>
 </head>
 <body>
-<table>
-<tbody>
-<tr>
-<td>
-    <div class="diagram">
+<div class="diagram">
 
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><!-- Created with Inkscape (http://www.inkscape.org/) -->
 
@@ -51,7 +61,8 @@
    sodipodi:version="0.32"
    version="1.0"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
-   inkscape:version="0.92.1 r15371">
+   inkscape:version="0.92.1 r15371"
+	 style="width:600px">
   <defs
      id="defs27">
     <inkscape:perspective
@@ -357,8 +368,6 @@
   </metadata>
 </svg>
 </div>
-</td>
-<td>
 <div class="heights">
     <table>
         <tbody>
@@ -412,9 +421,5 @@
         </tbody>
     </table>
 </div>
-</td>
-</tr>
-</tbody>
-</table>
 </body>
 </html>
